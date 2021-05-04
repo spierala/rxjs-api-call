@@ -1,0 +1,23 @@
+<h1>RXJS Flattening Operators in Action</h1>
+
+<h2>Please enable throttling in the inspector to simulate slow internet, e.g. 3G </h2>
+
+<div>
+    <button (click)="clickAction$.next(operatorType.MergeMap)">mergeMap</button>
+    <p>Click Count: {{mergeMapClickedCount}}</p>
+</div>
+
+<div>
+    <button (click)="clickAction$.next(operatorType.SwitchMap)">switchMap</button>
+    <p>Click Count: {{switchMapClickedCount}}</p>
+</div>
+
+<div>
+    <button (click)="clickAction$.next(operatorType.ConcatMap)">concatMap</button>
+    <p>Click Count: {{concatMapClickedCount}}</p>
+</div>
+
+<div>
+    <button (click)="clickAction$.next(operatorType.ExhaustMap)">exhaustMap</button>
+    <p>Click Count: {{exhaustMapClickedCount}}</p>
+</div>
